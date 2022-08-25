@@ -1,127 +1,103 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title style="font-size: 25px;">
-      <b>Cardápio</b>
-      <ion-icon name="person-circle-outline" style="float:right; height: 35px; width: 35px;"></ion-icon>
-    </ion-title>
-  </ion-toolbar>
-  <ion-toolbar>
-    <ion-searchbar placeholder="Buscar"></ion-searchbar>
+  <ion-toolbar color="dark">
+    <ion-list-header>
+      <ion-title color="light" style="padding: 0px;">Cardápio</ion-title>
+      <ion-button>
+        <ion-icon name="person-circle" size="large" color="light"></ion-icon>
+      </ion-button>
+    </ion-list-header>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Cardápio</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-title style="margin-top: 15px; font-size: 25px;">
-    Pizzas
-  </ion-title>
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
+  <ion-list-header>
+    <ion-title style="padding: 0px;">Pizzas</ion-title>
+  </ion-list-header>
+  <ion-list>
+    <!--Começo da Lista-->
+    <ion-item>
+      <!--Pizza Brocolis-->
+      <ion-thumbnail slot="start">
+        <img src="http://www.redelevepizza.com.br/assets/imagens/pizzas/016/brocolis-especial.jpg">
+      </ion-thumbnail>
+      <ion-label>Brócolis</ion-label>
+      <ion-badge color="dark">R$ 38,00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza Frango-->
+      <ion-thumbnail slot="start">
+        <img src="http://www.saboresajinomoto.com.br/uploads/images/recipes/pizza-de-frango-1.jpg">
+      </ion-thumbnail>
+      <ion-label>Frango</ion-label>
+      <ion-badge color="dark">R$ 44,00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza 4 queijos-->
+      <ion-thumbnail slot="start">
+        <img src="https://www.comidaereceitas.com.br/img/sizeswp/1200x675/2007/12/Pizza_quatro_queijossss.jpg">
+      </ion-thumbnail>
+      <ion-label>Quatro queijos</ion-label>
+      <ion-badge color="dark">R$ 35,50</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza Pepperoni-->
+      <ion-thumbnail slot="start">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-pepperoni-0.jpg">
+      </ion-thumbnail>
+      <ion-label>Pepperoni</ion-label>
+      <ion-badge color="dark">R$ 45,00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza Calabresa-->
+      <ion-thumbnail slot="start">
+        <img
+          src="https://www.sabordasreceitas.com.br/wp-content/uploads/2021/09/Receita-de-pizza-de-calabresa-facil.jpg">
+      </ion-thumbnail>
+      <ion-label>Calabresa</ion-label>
+      <ion-badge color="dark">R$ 42,00</ion-badge>
+    </ion-item>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <div>
-          <img src="https://www.portalumami.com.br/app/uploads/2021/07/Pizza-4-queijos.jpg"
-            style="width: 55px; height: 55px; margin-top: 10px;">
-        </div>
-      </ion-col>
-      <ion-col>
-        <ion-title style="margin-top: 30px; font-size: 13px;">
-          <font face="Trebuchet MS">Pizza de 4 Queijos</font>
-        </ion-title>
-      </ion-col>
-      <ion-col>
-        <div style="margin-top: 30px; font: Andale Mono;">
-          <font face="Andale Mono">R$ 38,00</font>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <div>
-          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/13/d4/e3/pizza-de-brocolis.jpg"
-            style="width: 55px; height: 55px; margin-top: 10px;">
-        </div>
-      </ion-col>
-      <ion-col>
-        <ion-title style="margin-top: 30px; font-size: 13px;">
-          <font face="Trebuchet MS">Pizza de Brócolis</font>
-        </ion-title>
-      </ion-col>
-      <ion-col>
-        <div style="margin-top: 30px; font: Andale Mono;">
-          <font face="Andale Mono">R$ 40,00</font>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <div>
-          <img src="https://www.believenews.com.br/wp-content/uploads/2018/02/Pizza-1100x642.jpg"
-            style="width: 55px; height: 55px; margin-top: 10px;">
-        </div>
-      </ion-col>
-      <ion-col>
-        <ion-title style="margin-top: 30px; font-size: 13px;">
-          <font face="Trebuchet MS">Pizza de Calabresa</font>
-        </ion-title>
-      </ion-col>
-      <ion-col>
-        <div style="margin-top: 30px; font: Andale Mono;">
-          <font face="Andale Mono">R$ 35,50</font>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <div>
-          <img src="https://i.pinimg.com/736x/67/ee/2a/67ee2a4762ca2f6e44deddafd4a5b3cb.jpg"
-            style="width: 55px; height: 55px; margin-top: 10px;">
-        </div>
-      </ion-col>
-      <ion-col>
-        <ion-title style="margin-top: 30px; font-size: 13px;">
-          <font face="Trebuchet MS">Pizza de Frango</font>
-        </ion-title>
-      </ion-col>
-      <ion-col>
-        <div style="margin-top: 30px; font: Andale Mono;">
-          <font face="Andale Mono">R$ 45,00</font>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <div>
-          <img src="https://xtudoreceitas.com/wp-content/uploads/Pizza-de-Chocolate-com-Morango.jpg"
-            style="width: 55px; height: 55px; margin-top: 10px;">
-        </div>
-      </ion-col>
-      <ion-col>
-        <ion-title style="margin-top: 30px; font-size: 13px;">
-          <font face="Trebuchet MS">Pizza de Chocolate</font>
-        </ion-title>
-      </ion-col>
-      <ion-col>
-        <div style="margin-top: 30px; font: Andale Mono;">
-          <font face="Andale Mono">R$ 32,00</font>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-item>
+      <!--Pizza Brocolis-->
+      <ion-thumbnail slot="start">
+        <img src="http://www.redelevepizza.com.br/assets/imagens/pizzas/016/brocolis-especial.jpg">
+      </ion-thumbnail>
+      <ion-label>Brócolis</ion-label>
+      <ion-badge color="dark">R$ 38,00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza Frango-->
+      <ion-thumbnail slot="start">
+        <img src="http://www.saboresajinomoto.com.br/uploads/images/recipes/pizza-de-frango-1.jpg">
+      </ion-thumbnail>
+      <ion-label>Frango</ion-label>
+      <ion-badge color="dark">R$ 44,00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza 4 queijos-->
+      <ion-thumbnail slot="start">
+        <img src="https://www.comidaereceitas.com.br/img/sizeswp/1200x675/2007/12/Pizza_quatro_queijossss.jpg">
+      </ion-thumbnail>
+      <ion-label>Quatro queijos</ion-label>
+      <ion-badge color="dark">R$ 35,50</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza Pepperoni-->
+      <ion-thumbnail slot="start">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-pepperoni-0.jpg">
+      </ion-thumbnail>
+      <ion-label>Pepperoni</ion-label>
+      <ion-badge color="dark">R$ 45,00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <!--Pizza Calabresa-->
+      <ion-thumbnail slot="start">
+        <img
+          src="https://www.sabordasreceitas.com.br/wp-content/uploads/2021/09/Receita-de-pizza-de-calabresa-facil.jpg">
+      </ion-thumbnail>
+      <ion-label>Calabresa</ion-label>
+      <ion-badge color="dark">R$ 42,00</ion-badge>
+    </ion-item>
+  </ion-list>
+  <!--Fim da Lista-->
 </ion-content>
